@@ -19,20 +19,20 @@ Functionality
 
 App users could have one of these three permission levels:
 
-_Guest_ :
--- can view collection
--- can search and filter collection exhibits
+#_Guest_ :
+- can view collection
+- can search and filter collection exhibits
 
-_Editor_:
--- can log in
--- can propose addition of new exhibits
--- can upload new photos of exhibits
+#_Editor_:
+- can log in
+- can propose addition of new exhibits
+- can upload new photos of exhibits
 
-_Admin_:
--- can log in
--- can add/remove Editors
--- can add/remove collection exhibits
--- can accept/reject changes suggested by Editor
+#_Admin_:
+- can log in
+- can add/remove Editors
+- can add/remove collection exhibits
+- can accept/reject changes suggested by Editor
 
 Futher features
 ========
