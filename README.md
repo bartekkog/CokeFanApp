@@ -38,3 +38,6 @@ Futher features
 ========
 
 to be written
+
+- guests/editors can use contact form to send msg to admin
+- any user can share exhibit's photo on their fb
