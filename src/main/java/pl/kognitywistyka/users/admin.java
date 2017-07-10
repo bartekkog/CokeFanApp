@@ -6,7 +6,7 @@ package pl.kognitywistyka.users;
 
 
 
-public class admin extends User{
+public class admin extends user {
 
     public admin(){}
 

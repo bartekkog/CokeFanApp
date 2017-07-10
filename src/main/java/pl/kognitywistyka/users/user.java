@@ -6,7 +6,7 @@ import javax.persistence.Id;
 /**
  * Created by Anna on 10.07.2017.
  */
-public abstract class User {
+public abstract class user {
 
     @Id
     @Column(name="USER_ID", nullable = false)
@@ -32,12 +32,11 @@ public abstract class User {
         this.password=password;
     }
 
-    public boolean equals(User user) {
+    public boolean equals(user user) {
         return super.equals(user.getId());
     }
 
     public boolean confirmPassword(String hashedPassword){
-        if(password.equals(hashedPassword)) return true;
-        else return false;
+        return password.equals(hashedPassword);
     }
 }
