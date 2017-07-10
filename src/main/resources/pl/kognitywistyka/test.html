@@ -6,6 +6,30 @@
   <meta name="vaadin-version" content="8.0.5">
  </head>
  <body>
-  <vaadin-vertical-layout size-full></vaadin-vertical-layout>
+  <vaadin-absolute-layout _id="bg">
+   <vaadin-vertical-layout width="468px" _id="top" :top="0px" :left="0px">
+    <vaadin-label height="43px" plain-text _id="naglowek" :middle :center>
+      Label 
+    </vaadin-label>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout height="230px" _id="middle" :top="80px" :right="0px" :left="0px">
+    <vaadin-label plain-text _id="labelka1" :bottom :center>
+      Label 
+    </vaadin-label>
+    <vaadin-text-field width="297px" _id="email" :center></vaadin-text-field>
+    <vaadin-label plain-text _id="labelka2" :bottom :center>
+      Label 
+    </vaadin-label>
+    <vaadin-text-field width="292px" _id="haslo" :middle :center></vaadin-text-field>
+   </vaadin-vertical-layout>
+   <vaadin-vertical-layout width="467px" height="135px" _id="down" :top="290px" :left="0px">
+    <vaadin-native-button plain-text _id="logIn" :middle :center>
+      NativeButton 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text _id="beGuest" :middle :center>
+      NativeButton 
+    </vaadin-native-button>
+   </vaadin-vertical-layout>
+  </vaadin-absolute-layout>
  </body>
 </html>
