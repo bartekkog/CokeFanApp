@@ -8,6 +8,7 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.*;
 import org.hibernate.SessionFactory;
+import pl.kognitywistyka.security.AuthenticationService;
 import pl.kognitywistyka.ui.MainWindow;
 
 /**

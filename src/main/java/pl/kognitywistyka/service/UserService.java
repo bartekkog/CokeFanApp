@@ -46,7 +46,7 @@ public class UserService {
 
     }
 
-    public  synchronized List<user> findById(String id) throws NoResultException{
+    public static synchronized List<user> findById(String id) throws NoResultException{
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction tr = null;
         List resultList = null;
@@ -70,9 +70,9 @@ public class UserService {
         return finalList;
     }
 
-    //Adding users to DB
+//Adding user to DB
 
-    public boolean add(user user){
+public boolean add(user user){
         user.setPassword(AuthenticationService.sha256(user.getPassword()));
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction tr = null;
@@ -91,7 +91,7 @@ public class UserService {
     return true;}
 
 
-//Deleting users from DB
+//Deleting user from DB
 
 public boolean delete(user user){
     Session session = HibernateUtils.getSessionFactory().openSession();
