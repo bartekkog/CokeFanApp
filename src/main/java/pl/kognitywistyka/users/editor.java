@@ -5,7 +5,8 @@ package pl.kognitywistyka.users;
  */
 public class editor extends user {
 
-    public editor(){}
+    public editor(String s, String name, String nazwisko){}
+
     public editor(String id, String password){
         setId(id);
         setPassword(password);
