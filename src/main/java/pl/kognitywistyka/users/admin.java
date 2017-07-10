@@ -8,7 +8,7 @@ package pl.kognitywistyka.users;
 
 public class admin extends user {
 
-    public admin(){}
+    public admin(String pawel, String s, String pawel1, String admin){}
 
     public admin(String id, String password){
         setId(id);
