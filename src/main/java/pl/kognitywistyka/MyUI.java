@@ -36,7 +36,7 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest){
         if (AuthenticationService.getInstance().isAuthenticated()){
-            setContent(new MainWindow());
+            setContent((Component) new MainWindow());
         } else {
             setContent(new LoginForm());
         }

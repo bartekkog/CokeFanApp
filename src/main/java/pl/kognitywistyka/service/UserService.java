@@ -22,7 +22,7 @@ import java.util.List;
 public class UserService {
 
     private static UserService instance;
-    private HashMap<String, user>;
+    private HashMap<String, user> users;
 
     public static UserService getInstance(){
         if (instance==null){
