@@ -1,10 +1,14 @@
 package pl.kognitywistyka.users;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
 /**
  * Created by Anna on 10.07.2017.
  */
 
-
+@Entity
+@DiscriminatorValue("admin")
 
 public class admin extends user {
 
