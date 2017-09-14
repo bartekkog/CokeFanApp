@@ -11,7 +11,7 @@ The app is using:
 - Maven
 - Vaadin framework
 - Hibernate ORM
-- MySQL
+- HSQLDB
 
 Functionality
 ========

@@ -9,7 +9,8 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.*;
 import org.hibernate.SessionFactory;
 import pl.kognitywistyka.security.AuthenticationService;
-import pl.kognitywistyka.ui.MainWindow;
+import pl.kognitywistyka.ui.LogInWindowLogic;
+import pl.kognitywistyka.ui.MainWindow0;
 
 /**
  * This UI is the application entry point. A UI may either represent a browser window
@@ -36,9 +37,9 @@ public class MyUI extends UI {
     @Override
     protected void init(VaadinRequest vaadinRequest){
         if (AuthenticationService.getInstance().isAuthenticated()){
-            setContent((Component) new MainWindow());
+            setContent( new MainWindow0());
         } else {
-            setContent(new LoginForm());
+            setContent(new LogInWindowLogic());
         }
     }
 

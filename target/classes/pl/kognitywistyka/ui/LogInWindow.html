@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+ </head>
+ <body>
+  <vaadin-css-layout style-name="form-template" responsive width="585px" height-full>
+   <vaadin-vertical-layout spacing="false" responsive size-auto>
+    <vaadin-label style-name="title borderless h1 light" width-full height="42px" plain-text :center>
+      Welcome to Coke Fan App! 
+    </vaadin-label>
+    <vaadin-label style-name="light" width="66px" height="30px" plain-text :center>
+      Log in ;) 
+    </vaadin-label>
+    <vaadin-vertical-layout width="261px" :center>
+     <vaadin-text-field caption="Email" _id="emailAddress"></vaadin-text-field>
+     <vaadin-text-field caption="Password" _id="password"></vaadin-text-field>
+     <vaadin-css-layout style-name="input-wrapper">
+      <vaadin-vertical-layout size-auto margin-left="false" margin-right="false" margin-bottom="false">
+       <vaadin-button style-name="primary danger" plain-text _id="submit">
+         Submit and let's go 
+       </vaadin-button>
+       <vaadin-button plain-text _id="cancel">
+         or visit as a guest 
+       </vaadin-button>
+      </vaadin-vertical-layout>
+     </vaadin-css-layout>
+    </vaadin-vertical-layout>
+   </vaadin-vertical-layout>
+  </vaadin-css-layout>
+ </body>
+</html>

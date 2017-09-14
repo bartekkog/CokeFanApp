@@ -1,0 +1,8 @@
+nazwa String
+data produkcji yyyy
+kraj pochodzenia String
+original brand 0/1
+gadzet kolekcjonerski/uzytkowy 0/1
+promocyjny 0/1
+nowy/uzywany 0/1
+foto..?

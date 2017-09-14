@@ -1,28 +1,20 @@
 package pl.kognitywistyka;
-
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
 
-/**
- * Created by Anna on 10.07.2017.
- */
 public class HibernateUtils {
+        private static SessionFactory sessionFactory;
 
-    private static SessionFactory sessionFactory;
+        public static SessionFactory getSessionFactory() {
+            if (sessionFactory == null) {
+                // loads configuration and mappings
+                Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
+                sessionFactory = configuration.buildSessionFactory();
+            }
 
-    private static void buildSessionFactory(){
-        sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
-
-    }
-
-    public static SessionFactory getSessionFactory(){
-        if (sessionFactory == null) buildSessionFactory();
-        return sessionFactory;
-    }
-
-    public static void closeSessionFactory(){
-        if(sessionFactory!= null){
-            sessionFactory.close();
+            return sessionFactory;
         }
     }
-}
+
